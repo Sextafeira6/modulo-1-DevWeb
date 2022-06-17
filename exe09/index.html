@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link favicon="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Hiperlinks e Ancoragem</title>
+</head>
+<body>
+<h1>Usando hiperlinkagem e Ancoragem</h1>
+ <p>Para criar um hyperlink, devemos criar âncoras através da tag <code>&lt;a&gt;</code></p>
+ <p>O principal atributo dessa tag é o <code>href</code>, que cria uma referência hipertexto</p>    
+    
+     <hr>
+   <h2>1) links Externos</h2> <!--Links Externos-->
+     <hr>
+     <p>Links Externos levam o leitor da sua página para uma outra página de outro site que não o seu domínio   </p>
+     <p>Exemplo:  vamos visitar o <a href="http://info.cern.ch/">primeiro site do mundo</a>
+     <p>Atenção: por padrão,o hiperlink abrirá um site <abbr title="trata-se de um atributo conhecido como _self">no lugar do frame que está aberto o seu site</abbr></p>
+     <ul>
+         <li>No entanto, no caso de direiconamento para links externos, o recomendado é abrir uma nova aba 
+             <ul>
+                 <li type="circle">Para isso basta usar o atributo: <code>target="_blank"</code>
+                    <ul>
+                        <li>Ex: vamos visitar a <a href="https://symbolics.com/" target="_blank" rel="external">1ª TLD ".com"</a> registrada na história de internet</li>
+                    </ul>
+             </ul>
+     </ul>
+     <p>Ah! além disso é bom demonstrar para os motores de busca que a ancoragem que você está usando não é relacionada ao seu domínio, isto é, ela é externa ao seu site.</p>
+     <ul>
+         <li>Para isso basta usar o atributo <code>rel="external</code>":</li>
+     </ul>
+     
+       <h3 cite="https://rockcontent.com/br/blog/links-dofollow-nofollow/">Links Dofollow e Nofollow</h3> <!--Links Dofollow e Nofollow-->
+         <dl><a href="https://rockcontent.com/br/blog/links-dofollow-nofollow/" target="_blank" rel="dofollow">Links Dofollow:</a>
+            <dd>Permitem que os motores de busca apontem de volta o seu site (atributo <code>rel="dofollow"</code>)
+         </dl>
+         <ul>
+         </ul>
+         <dl>Links Nofollow</dl>
+             <dd>São aqueles que você pode inserir e não ter um apontamento de volta (atributo <code>rel="nofollow"</code>)</dd>
+         <p>&#X1F914;Dúvida: Qual a utilidade de diferenciar links Dofollow de Nofollow?</p>
+         <p>&#X1F9E0;Resposta<q>[...]da mesma forma que links bons apontando o seu domínio o tornam melhor, links ruins podem diminuir a sua autoridade diante do Google.</q></p>
+         <p>O uso adequado dos atributos external, nofollow ou dofollow depende de uma pesquisa mais apurada sobre <a href="https://resultadosdigitais.com.br/o-que-e-seo/#:~:text=SEO%20%C3%A9%20a%20sigla%20de,utros%20buscadores%2C%20gerando%20tr%C3%A1fego%20org%C3%A2nico." target="_blank" rel="dofollow">SEO</a></p>      
+        <hr>
+
+   <h2>2) Links Internos</h2> <!--Links Internos-->
+     <hr>
+     <p>Links internos permite o direcionamento do leitor da sua página para uma outra página sua dentro do seu site (domínio)</p>
+     <p>Por exemplo você já visitou a minha segunda página HTML? <a href="pg2teste.html">vamos lá</a>?</p>
+     <br>
+     <p>Detalhes importantes</p>
+         <ul>
+             <li>Se o arquivo da página <abbr title="que você quer mandar o leitor ">referida</abbr> que você quer mandar o leitor estiver no mesmo local (pasta) que está sua página <abbr title="Aquela que você colocou o link">referente</abbr> dá pra colocar apenas o nome do arquivo e blz</li>
+             <li>Se o arquivo da página referida estiver dentro de uma pasta que está dentro da onde está sua página referente, nesse caso você vai ter que usar no link o sufixo: <code>nome da pasta/nome do arquivo</code></li>
+             <li>Se o arquivo da página referida estiver <abbr title="Numa hierarquia superior">fora da pasta</abbr> onde está a página referente nesse caso você vai ter que usar o <abbr title="Vai ter exemplo da estrutura na página 3">sufixo</abbr>: <code>.../nome do arquivo</code></li>
+         </ul>
+     <p>Exemplos abaixo</p>
+     <ul>
+        <li><a href="pg2teste.html" >Ir para página 02</a> (estrutura: <code>&lt;a href="pg2teste.html" &gt;Ir para página 02&lt;/a&gt;</code> ) </li>
+        <li><a href="pg3teste/pg3teste.html">Ir para página 03 </a>(estrutura: <code>&lt;a href="pg3teste/pg3teste.html"&gt;Ir para página 03 &lt;/a&gt;</code>)&lt;/li&gt;
+     </ul>
+</body>
+</html>

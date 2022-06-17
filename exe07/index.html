@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+<body>
+ <h1>Outras formatações</h1>
+ <hr>
+
+    <h2>1) Código Fonte (<code>Monoespaçada</code>)</h2> <!--Código Fonte (Monoespaçada)-->
+         <hr>
+         <p>Para usar códigos fontes como esse: <code>document.getElementById('teste')</code> é muito bom usar uma fonte monoespaçada, para isso use a tag &lt;code&gt;.</p>
+         <p>Ex: document.getElementById('teste')  normal</p>
+         <p>Ex: <code>document.getElementById('teste')</code>   monoespaçada</p>
+         <br>
+
+            <h3>1.1) Pré formatação</h3> <!--Pré formatação-->
+             <p>Agora para você manter uma formatação "profissional" de uma linha de código, como essa aqui embaixo  &#x2B07; ,use a tag &lt;pre&gt; (se não, as linhas ficam lado a lado)</p> 
+             <pre>
+                <code>
+                Num = int(input('Digite um número'))
+                if num % 2 == 0:
+                print(f'0 número {num} é PAR)
+                ELSE:
+                print(f'O número {num} é ÍMPAR')
+                print('Fim do programa')
+                </code>
+             </pre>
+             <p>&#x1F609;Dica extra: para escolher em qual parte horizontal o código vai ficar, selecione apenas o texto do código (sem as tags) e use os comandos do teclado: </p>
+             <p>&#X25B6;TAB para afastar no sentido direito</p>
+             <p>&#X25C0;Shift + TAB para trazer no sentido esquerdo</p>
+             <P>Exemplo:&#X25C0;</P>
+             <pre>
+             <code>
+Num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'0 número {num} é PAR)
+ELSE:
+    print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+             </code>
+             </pre>
+             <P>Exemplo 2 &#X25B6;:</P>
+             <pre>
+             <code>
+                            Num = int(input('Digite um número'))
+                            if num % 2 == 0:
+                                print(f'0 número {num} é PAR)
+                            ELSE:
+                                print(f'O número {num} é ÍMPAR')
+                                print('Fim do programa')
+             </code>
+             </pre>
+             <br>
+             <hr>
+
+    <H2>2) Citações</H2> <!--Citações-->
+         <hr>
+        <h3>2.1) Citações Simples</h3> <!--Citações Simples-->
+             <p>Como diria um velho sábio (Einstein): <q>Os computadores são incrivelmente rápidos, precisos e burros; os homens são incrivelmente lentos, imprecisos e brilhantes; juntos, seus poderes ultrapassam os limites da imaginação.</q></p>
+             <p>Para fazer citações, como essa ai em cima, use a tag &lt;q&gt; pois é uma tag puramente semântica que indica para a linguagem que trata-se realmente de uma citação, pois deixando entre aspas, o html iria tratar apenas como um termo integrante do texto.</p>
+         <br>
+        <h3>2.2) Citações compostas</h3> <!--Citações Compostas-->
+             <p>Para fazer citações compostas, use a tag &lt;blockquote&gt;, ela que vai deixar a citação dessa forma:
+                <blockquote>Descloada um pouco para direita, de forma a dar ênfase e destaque para a parte citada além de ter uma semântica própria para o HTML</blockquote>
+                <p>&#x1F609;Dica extra: se você quiser deixar as devidas referências ao site de onde você pegou essa citação (para não violar algum direito autoral), você pode dentro da tag &lt;blockquote&gt; colocar um link de citação para o site de onde você pegou a parte do texto citado usando o parâmetro <code>cite="link do site"</code> dentro daquela tag, no caso vai ficar assim &lt;blockquote cite="https:// cite citado ..."&gt; citação &lt;/blockquote&gt;. Ah um detalhe, esse parâmetro não é visual para quem lê!!</p>
+                <P>Exemplo: Em uma das grande obras da humaninade temos a seguinte produção:</P>
+                <pre>
+                <blockquote cite="https://www.letras.mus.br/flamengo/224185/">
+                    Uma vez Flamengo, sempre Flamengo
+                    Flamengo sempre eu hei de ser
+                    É meu maior prazer vê-lo brilhar
+                    Seja na terra, seja no mar
+                    Vencer, vencer, vencer!
+                    Uma vez Flamengo, Flamengo até morrer!
+                </blockquote>
+                </pre>
+                <hr>
+    <h2>Abreviações e Conceitos suspensos</h2> <!--Abreviações e Conceitos suspensos-->
+     <hr>
+     <p>A tag &#X27A1;<code>abbr</code>&#X2B05; é uma "caixa suspensa" que mostra uma definição daquilo que você resolveu conceituar ou abreviar, assim você ajuda tanto os mecanismos de busca, como simplifica seu texto, ah a propósito, você sabe o que é um <strong><abbr title="sistemas que unem todas as informações da internet proporcionando por meio de algoritmos as melhores respostas feitas pelos usuários">motor de busca</abbr></strong> né?! </p>
+    </body>
+</html>

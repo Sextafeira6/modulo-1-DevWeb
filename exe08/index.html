@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+    </head>
+<body>
+ <h1>Trabalhando com listas</h1> <!--Trabalhando com listas-->
+ 
+    <hr>
+  <h2>1) Listas Ordenadas</h2> <!--Listas Ordenadas-->
+    <hr>
+    <P>Para criar uma lista ordenada siga a sequência:</P>
+    <ol>
+       <li>Abra a tag &lt;ol&gt;
+       <li>Quebre a linha (por organização)
+       <li>Liste as coisas uma a uma por meio da tag <abbr title="Ah! no HTML5 essa tag não precisa de fechamento"> &lt;li&gt;</abbr>
+       <li>É isso!
+    </ol>
+      
+      <h3>1.1) Tipos de início da lista</h3> <!--Tipos de início de listas-->
+       <p>Ah você pode também modificar qual o tipo de ordenamento da lista, por exemplo, se é por números ordinais, romanos, alfabeto.</p>
+       <p>Para isso basta usar o parâmetro type depois da abertura da tag &lt;ol&gt;, ele fornece os seguintes tipos de ordenações: (fica assim &lt;ol type=""&gt;)
+       <ol>
+          <li>1 - lista numérica comum
+          <li>A - Lista alfabética - Caixa alta
+          <li>a - Lista alfabética - Caixa baixa
+          <li>I - Lista numérica - Algarismos romanos - Caixa alta
+          <li>i - Lista numérica - Algarismos romanos - Caixa baixa
+       </ol> </p>
+       <p>Exemplo:</p>
+       <ol type="i">
+          <li>Entendeu?</li>
+          <li>Agora a gente vai ver como começar uma lista a partir de um outro número/ letra qualquer</li>
+          <li>Por exemplo, começar uma lista a partir do 5</li>
+        </ol>
+      
+     <h3>1.2) Iniciando uma lista a partir de um referêncial específico</h3> <!--Iniciando uma lista a partir de um referêncial específico-->
+       <p>Para iniciar a lista a partir de um referêncial específico basta usar o parâmetro start (tipo assim: &lt;ol type="1" start="5"&gt;)</p>
+       <ol type="1" start="5">
+          <li>A
+          <li>cor
+          <li>da
+          <li>Pedrinho
+          <li>que hoje tem campeonato!!!
+       </ol>
+       <p>&#X26A0; Atenção &#X26A0;: O parâmetro start usa valores numéricos, incusive nas listas alfabéticas</p>
+       <p>Exemplo: se você quiser começar a partir da letra "c", o parâmetro start vai ter ter um <abbr title="Já que o start 1=a; 2=b 3=c ...">valor: 3</abbr> </p>
+    
+    <hr>
+  <h2>2) Listas não ordenadas</h2> <!--Listas não ordenadas-->
+    <hr>  
+    <p>Eu também posso criar listas que não são necessariamente sequênciais, isto é, tem um padrão, tipo 1, 2, 3 ... são topics points por exemplo:
+    <ul>
+       <li>O controle de constitucionalidade pode ser difuso ou concentrado
+       <li>Ele mata a cobra e mostra o pau
+       <li>Eu vou a diante e volto atrás, por isso do lugar não saio mais
+    </ul> </p>
+   
+     <h3>2.1) Tipos de lista não ordenadas</h3> <!--Tipos de listas não ordenadas-->
+       <p>Para colocar outros tipos de points na lista é preciso usar o parâmetro type do mesmo modo como lá em cima, aqui existem os seguintes tipos de points:</p>
+       <ol>
+          <li>Disc &#X25CF; (padrão)
+          <li>Circle &#9675;
+          <li>Square &#9632;
+       </ol>
+    
+    <hr>
+  <h2>3) Listas mistas</h2> <!--Listas Mistas-->
+    <hr>
+    <p>Para criar listas mistas, basta colocar um &lt;ol&gt; dentro de outra &lt;ol&gt; ai vai da sua criatividade! exemplo abaixo
+    <ol>
+       <li>Linguagens de marcação
+          <ol type="a">
+             <li>HTML
+             <li>XHTML
+             <li>SGML
+          </ol>
+       <li>Linguagens de programação
+          <ol type="a">
+             <li>Python
+             <li>JavaScript
+             <li>Java
+          </ol>    
+    </ol>
+    <p>&#X1F4A1;Dica extra&#X1F4A1;: Se quiser selecionar/ alterar várias tags ao mesmo tempo, faça o seguinte:</p>
+    <ol>
+       <li>Coloque o <abbr title="Aquela barra vertical (|) que fica piscando">ponto de Inserção {PI}</abbr> na parte que você quer alterar da tag
+       <li>Para cada tag que você for colocar o PI, antes, aperte a tecla Alt
+       <li>Edite
+    </ol>
+    <p>&#X26A0;Ah! dois detalhes &#X26A0;:</p>
+    <ul>
+       <li>Onde vc deixar o PI (dentro da tag) é a parte que vai ser editada!
+       <li>Todos os PIs serão editados pelo mesmo termo que escrever
+    </ul>
+    <hr>
+  <h2>4) Lista de Definição</h2> <!--Lista de Definição-->
+    <hr>  
+    <p>Para criar uma lista de definição</p>  
+    <ol>
+       <li>Abra a tag &lt;dl&gt;
+       <li>Digite o Termo a se conceituar dentro da tag &lt;dl&gt;
+       <li>Qubre a linha (por organização)
+       <li>Abra a tag <abbr title="Não precisa de fechamento">&lt;dd&gt;</abbr>
+       <li>Digite dentro da tag &lt;dd&gt; a definição do conceito que está contido na tag &lt;dl&gt;
+    </ol>
+    <dl>Termo - Lista de Definição</dl>
+       <dd>Trata-se de uma tag que trás um termo e sua respectiva definição logo abaixo e descolado para a direita</dd>
+   <p>&#X1F91D;Usando essa tag corretamente você ajuda os motores de busca, e em troca ainda ganha pontos no ranqueamento nas ferramentas de SEO&#X1F91D;</p>
+</body>
+</html>
